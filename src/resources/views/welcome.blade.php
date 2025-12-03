@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCN Pay</title>
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -14,14 +16,29 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .animate-float {
@@ -34,8 +51,15 @@
         }
 
         @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.3); }
-            50% { box-shadow: 0 0 30px rgba(99, 102, 241, 0.5); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+            }
         }
 
         .pulse-glow {
@@ -47,7 +71,7 @@
 <body class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 animate-gradient flex items-center justify-center min-h-screen p-4">
 
     <div class="bg-white/90 backdrop-blur-md p-8 rounded-2xl shadow-2xl w-full max-w-sm text-center">
-        
+
         <!-- Logo/Icon with Float Animation -->
         <div class="mb-6 flex justify-center animate-float">
             <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-3 rounded-xl shadow-lg pulse-glow">
@@ -63,7 +87,7 @@
                 ระบบชำระค่าอินเตอร์เน็ต
             </span>
         </h1>
-        <p class="text-lg font-semibold text-gray-800 mb-1">PCNONE</p>
+        <p class="text-lg font-semibold text-gray-800 mb-1">PCN Pay</p>
         <p class="text-gray-500 mb-8 text-sm">เข้าสู่ระบบเพื่อชำระค่าบริการ</p>
 
         <!-- Google Sign In Button -->
